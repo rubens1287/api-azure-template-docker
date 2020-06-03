@@ -51,8 +51,8 @@ public class UsersService extends Spec implements TestingType {
     @Override    public boolean verifySchema(Response response) {
         log.info("Validação do schema do corpo da resposta do json");
         assertThat(response.getBody().prettyPrint(), matchesJsonSchemaInClasspath("schemas/users/users-schema.json"));
-        attachments.add(new Attachment(requestWriter.toString()));
-        attachments.add(new Attachment(responseWriter.toString()));
+        attachments.add(new Attachment(requestWriter.toString(),"Request"));
+        attachments.add(new Attachment(responseWriter.toString(),"Response"));
         return true;
     }
 }
