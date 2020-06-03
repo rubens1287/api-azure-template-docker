@@ -20,7 +20,7 @@
 		<cucumber.version>3.0.2</cucumber.version>
 		<log4j.version>2.13.0</log4j.version>
 
-		<env>des</env> <!--	uat ou des ou preprod-->
+		<env>des</env> <!--	hom ou des ou qa-->
 		<baseurl>https://jsonplaceholder.typicode.com</baseurl>
 		<token>nqh7zd6qbn7iki6iwnqsh4vtr7khqc323wlpa65ltxvgrhiuewxa</token> <!-- Token de acesso ao modulo test management com permissão de escrita e leitura -->
 	</properties>
@@ -75,12 +75,6 @@
 			<version>2.8.6</version>
 		</dependency>
 
-		<!-- Allure report em HTML -->
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-cucumber3-jvm</artifactId>
-			<version>2.7.0</version>
-		</dependency>
 
 		<!--Java Faker  Geracao de dados sinteticos -->
 		<dependency>
@@ -161,6 +155,14 @@
 			<artifactId>owner</artifactId>
 			<version>1.0.10</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.0</version>
+		</dependency>
+
 
 	</dependencies>
 </project>

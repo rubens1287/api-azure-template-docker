@@ -1,5 +1,7 @@
 package steps;
 
+import core.Spec;
+import core.azure.model.attachment.Attachment;
 import core.data.DataYaml;
 import org.junit.Assert;
 import services.UsersService;
