@@ -1,0 +1,11 @@
+# Usage:
+#   docker-compose up --force-recreate
+#   docker-compose stop
+version: '3'
+
+services:
+  #--------------#
+  teste:
+      build: .
+      container_name: api-project-template-multi-cloud_teste
+      command: mvn clean test -Denv=qa
