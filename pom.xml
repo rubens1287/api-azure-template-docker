@@ -22,7 +22,7 @@
 
 		<env>des</env> <!--	hom ou des ou qa-->
 		<baseurl>https://jsonplaceholder.typicode.com</baseurl>
-		<token>nqh7zd6qbn7iki6iwnqsh4vtr7khqc323wlpa65ltxvgrhiuewxa</token> <!-- Token de acesso ao modulo test management com permissão de escrita e leitura -->
+		<token>tnt5opfpegrrqdqqw7f6e4iimu4ssngbnqqgbm34p66v34hssngq</token> <!-- Token de acesso ao modulo test management com permissão de escrita e leitura -->
 	</properties>
 
 	<build>
