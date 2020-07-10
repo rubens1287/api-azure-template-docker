@@ -8,7 +8,7 @@ public interface TestingType {
 
     boolean healthCheck(Response response, int statuCode);
 
-    boolean verifyBody(Response response, HashMap data);
+    boolean verifyBody(Response response,HashMap data);
 
     boolean verifySchema(Response response);
 }

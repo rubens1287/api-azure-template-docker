@@ -14,6 +14,5 @@ public interface AzureConfig extends Config {
     @Key("organization")
     String organization();
 
-    @Key("personal.access.token")
-    String personalToken();
+
 }

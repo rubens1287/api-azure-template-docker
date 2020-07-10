@@ -1,25 +1,23 @@
 package steps;
 
-import core.Spec;
-import core.azure.model.attachment.Attachment;
 import core.data.DataYaml;
 import org.junit.Assert;
-import services.UsersService;
+import services.GetUsersService;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
 
-public class UsersSteps {
+public class GetUsersSteps {
 
     private Response response;
-    private UsersService usersService;
+    private GetUsersService usersService;
     private HashMap data = DataYaml.getMapYamlValues("Usuarios","usuarios");
 
     @Quando("^eu consultar um usuario$")
     public void euConsultarUmUsuario()  {
-        usersService = new UsersService();
+        usersService = new GetUsersService();
         response = usersService.getUsers(data);
     }
 

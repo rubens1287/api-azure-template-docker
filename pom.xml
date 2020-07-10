@@ -21,8 +21,7 @@
 		<log4j.version>2.13.0</log4j.version>
 
 		<env>des</env> <!--	hom ou des ou qa-->
-		<baseurl>https://jsonplaceholder.typicode.com</baseurl>
-		<token>tnt5opfpegrrqdqqw7f6e4iimu4ssngbnqqgbm34p66v34hssngq</token> <!-- Token de acesso ao modulo test management com permissão de escrita e leitura -->
+		<token></token> <!-- Token de acesso ao modulo test management com permissão de escrita e leitura -->
 	</properties>
 
 	<build>
@@ -34,7 +33,6 @@
 				<configuration>
 					<systemPropertyVariables>
 						<env>${env}</env>
-						<baseurl>${baseurl}</baseurl>
 						<token>${token}</token>
 					</systemPropertyVariables>
 					<includes>
@@ -163,6 +161,20 @@
 			<version>2.0</version>
 		</dependency>
 
+        <!--Jooq para leitura de dados do banco de dados -->
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+            <version>3.13.2</version>
+        </dependency>
 
-	</dependencies>
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>6.1.0.jre8</version>
+		</dependency>
+
+
+    </dependencies>
 </project>
