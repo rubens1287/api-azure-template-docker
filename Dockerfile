@@ -4,7 +4,8 @@
 #    docker build -t back-end -f ./Dockerfile .
 #Rodar os testes
 #    docker run -v "$PWD/target:/usr/target" back-end mvn test -Denv=qa
-FROM maven:3.5.3-jdk-8-alpine
+FROM adoptopenjdk/maven-openjdk11
 WORKDIR /usr
 COPY . /usr
+ENV TZ=America/Sao_Paulo
 RUN mvn dependency:go-offline -B
