@@ -6,7 +6,7 @@ Projeto desenvolvido com proposito de ser um modelo base para teste de API
 
 Requisitos de software e hardware necessários para executar este projeto de automação
 
-*   Java 1.8 SDK
+*   Java 11 JDK
 *   Maven 3.5.*
 *   Intellij IDE
 *   Plugins do Intellij
